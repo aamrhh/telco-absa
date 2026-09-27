@@ -10,3 +10,7 @@ GITHUB commit progress:
    git add .
    git commit -m "NOTESSS"
    git push
+
+
+To test-run:
+python scraping/NAME OF THE FILE
