@@ -1,3 +1,3 @@
 import pandas as pd
-df = pd.read_csv("data/raw/app_store_celcomdigi_old.csv")
-print(df.iloc[0])
+df = pd.read_csv("data/raw/all_reviews.csv")
+df.to_csv("data/raw/all_reviews_no_header.csv", index=False, header=False)
