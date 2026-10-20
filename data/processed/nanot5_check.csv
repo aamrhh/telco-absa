@@ -1,0 +1,6 @@
+Text version,% right,Fair score,F1 negative,F1 neutral,F1 positive
+Raw,51.2,49.0,62.2,31.8,53.0
+Cleaned only,51.4,48.9,62.3,31.9,52.6
+Normalized (after cleaning),52.9,50.0,64.2,31.7,54.1
+English dictionary,53.3,50.7,63.9,31.8,56.3
+Malay dictionary,55.5,52.0,66.7,34.3,55.1

@@ -1,3 +1,13 @@
 venv/
 __pycache__/ 
 .DS_Store
+.agents/skills/developing-with-streamlit
+# local clutter
+_old/
+.DS_Store
+.agents/
+__pycache__/
+venv/
+
+# big files you can rebuild with the scripts
+data/processed/4_dictionary_mapped_reviews.csv

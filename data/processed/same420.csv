@@ -1,0 +1,16 @@
+Text version,Training labels,% right,+/-,Fair score,+/- (fair)
+Raw,XLM-R labels,62.6,4.7,58.9,5.3
+Raw,DistilBERT labels,55.7,3.3,41.3,2.9
+Raw,My labels,73.5,3.3,58.0,5.7
+Cleaned only,XLM-R labels,62.6,4.7,58.9,5.3
+Cleaned only,DistilBERT labels,55.6,3.3,41.2,2.8
+Cleaned only,My labels,73.5,3.3,58.0,5.7
+Normalized (after cleaning),XLM-R labels,65.5,3.5,61.2,4.2
+Normalized (after cleaning),DistilBERT labels,57.4,3.7,42.9,3.5
+Normalized (after cleaning),My labels,75.1,3.0,61.8,4.9
+English dictionary,XLM-R labels,65.5,3.5,61.3,4.1
+English dictionary,DistilBERT labels,57.9,3.5,43.3,3.3
+English dictionary,My labels,75.4,3.2,62.1,4.9
+Malay dictionary,XLM-R labels,65.1,3.5,60.9,4.0
+Malay dictionary,DistilBERT labels,57.5,3.6,43.0,3.5
+Malay dictionary,My labels,75.1,3.0,61.7,4.7

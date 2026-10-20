@@ -1,0 +1,11 @@
+Labeler,Text version,Accuracy %,Macro-F1 %,F1 negative %,F1 neutral %,F1 positive %,Parts
+XLM-R,Raw,68.3,65.7,72.9,44.2,80.0,420
+XLM-R,Cleaned only,69.8,67.0,75.6,46.5,79.1,420
+XLM-R,Normalized (after cleaning),71.0,68.5,76.2,47.5,81.8,420
+XLM-R,English dictionary,71.7,69.1,76.8,48.0,82.6,420
+XLM-R,Malay dictionary,70.5,68.1,76.1,46.8,81.3,420
+DistilBERT,Raw,60.2,46.5,69.8,7.1,62.6,420
+DistilBERT,Cleaned only,59.0,45.6,68.3,7.1,61.6,420
+DistilBERT,Normalized (after cleaning),59.8,46.3,69.5,6.7,62.6,420
+DistilBERT,English dictionary,59.3,46.0,68.6,6.6,62.8,420
+DistilBERT,Malay dictionary,60.5,46.8,70.2,6.7,63.4,420

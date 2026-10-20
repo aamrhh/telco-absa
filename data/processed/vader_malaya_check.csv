@@ -1,0 +1,6 @@
+Tool,Text version,% right,Fair score,F1 negative,F1 neutral,F1 positive,Says negative / neutral / positive
+Malaya NanoT5 base,Raw,55.0,53.8,59.4,39.6,62.5,121 / 168 / 131
+Malaya NanoT5 base,Cleaned only,52.6,51.5,58.0,36.6,60.0,119 / 176 / 125
+Malaya NanoT5 base,Normalized (after cleaning),54.5,53.5,59.1,38.8,62.5,116 / 173 / 131
+Malaya NanoT5 base,English dictionary,55.0,54.0,58.4,39.6,63.8,117 / 168 / 135
+Malaya NanoT5 base,Malay dictionary,55.0,53.6,58.9,39.1,62.9,117 / 161 / 142

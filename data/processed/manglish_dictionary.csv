@@ -1,0 +1,175 @@
+# DICTIONARY v4 = a plain English <-> Malay list. Search a word in EITHER column.,,,,
+# Short forms, typos and spelling variants are NOT here: the normalizer fixes them (see normalizer_short_forms.csv).,,,
+# Slurs stay exactly as written in English AND Malay (not translated): cibai," celaka,bingai,bangang,  sial, lancau,  buto,  kontol,  pantat,  mampus,  hanat,  barua, bengong.",,,
+# lol and bro are also left as they are.  la / lah are dropped by the normalizer.,,,,
+# If one word has several translations, rows with category english_to_malay / english_standard / english_phrase lead for English,,,
+# words, every other row leads for Malay words; inside a group the first row wins.,,,
+english,malay,category,type,note
+top up,tambah nilai,billing,telco_specific,
+top ups,tambah nilai,billing,telco_specific,
+fair usage policy,dasar penggunaan wajar,billing,telco_specific,
+e-KYC identity verification,pengesahan identiti e-KYC,identity_verification,telco_specific,
+identity verification,pengesahan identiti,identity_verification,telco_specific,
+voice over LTE,panggilan suara LTE,network_technology,telco_specific,
+customer service,perkhidmatan pelanggan,customer_service,telco_specific,
+SIM card,kad SIM,device_sim,telco_specific,
+SIM cards,kad SIM,device_sim,telco_specific,
+eSIM,SIM elektronik,device_sim,telco_specific,
+SIM,SIM,device_sim,telco_specific,
+log back in,log masuk semula,account_access,telco_specific,
+logged out unexpectedly,tiba-tiba log keluar,account_access,telco_specific,
+logged in,log masuk,account_access,telco_specific,
+Celcom,Celcom,brand_name,telco_specific,
+Digi,Digi,brand_name,telco_specific,
+CelcomDigi,CelcomDigi,brand_name,telco_specific,
+Maxis,Maxis,brand_name,telco_specific,
+Maxis One,Maxis One,brand_name,telco_specific,
+U Mobile,U Mobile,brand_name,telco_specific,
+Hotlink,Hotlink,brand_name,telco_specific,
+CelcomLife,CelcomLife,brand_name,telco_specific,
+unifi,unifi,brand_name,telco_specific,
+WhatsApp,WhatsApp,brand_name,telco_specific,
+MyDigital ID,MyDigital ID,brand_name,telco_specific,
+Digi app,aplikasi Digi,brand_name,telco_specific,
+Home Fibre,Fiber Rumah,brand_name,telco_specific,
+Ultra 5G,Ultra 5G,brand_name,telco_specific,
+YES 4G,YES 4G,brand_name,telco_specific,
+app,app,brand_name,telco_specific,Malay side kept in English: aplikasi/talian made XLM-R fail on 4 reviews
+apps,apps,brand_name,telco_specific,Malay side kept in English: aplikasi/talian made XLM-R fail on 4 reviews
+OTP,OTP,tech_term,telco_specific,
+OTPs,OTP,tech_term,telco_specific,
+WiFi,WiFi,tech_term,telco_specific,
+LTE,LTE,tech_term,telco_specific,
+Mbps,Mbps,tech_term,telco_specific,
+fibre,fibre,tech_term,telco_specific,
+centre,pusat,tech_term,telco_specific,
+log in,log masuk,tech_term,telco_specific,
+log ins,log masuk,tech_term,telco_specific,
+log out,log keluar,tech_term,telco_specific,
+log outs,log keluar,tech_term,telco_specific,
+TikTok,TikTok,tech_term,telco_specific,
+Spotify,Spotify,tech_term,telco_specific,
+before,dulu,malay_short_form,generic_manglish,
+FAQ,FAQ,tech_term,generic_manglish,
+GPRS,GPRS,tech_term,telco_specific,
+NRIC,NRIC,tech_term,generic_manglish,
+Xiaomi,Xiaomi,brand_name,generic_manglish,
+Huawei,Huawei,brand_name,generic_manglish,
+Waze,Waze,brand_name,generic_manglish,
+Touch 'n Go,Touch 'n Go,brand_name,telco_specific,
+Cheras,Cheras,place_name,generic_manglish,
+slow,lembab,slang_intensifier,generic_manglish,
+do not,tidak,english_phrase,generic_manglish,
+does not,tidak,english_phrase,generic_manglish,
+did not,tidak,english_phrase,generic_manglish,
+is not,bukan,english_phrase,generic_manglish,
+was not,bukan,english_phrase,generic_manglish,
+are not,bukan,english_phrase,generic_manglish,
+could not,tidak boleh,english_phrase,generic_manglish,
+cannot,tidak boleh,english_phrase,generic_manglish,
+will not,tidak akan,english_phrase,generic_manglish,
+would not,tidak akan,english_phrase,generic_manglish,
+should not,tidak patut,english_phrase,generic_manglish,
+have not,belum,english_phrase,generic_manglish,
+has not,belum,english_phrase,generic_manglish,
+was not,tidak,english_phrase,generic_manglish,
+were not,bukan,english_phrase,generic_manglish,
+had not,belum,english_phrase,generic_manglish,
+TAC,TAC,tech_term,telco_specific,
+paywall,paywall,tech_term,generic_manglish,
+line,line,network_performance,telco_specific,Malay side kept in English: aplikasi/talian made XLM-R fail on 4 reviews
+update,kemas kini,app_term,generic_manglish,
+updates,kemas kini,app_term,generic_manglish,
+updating,mengemas kini,app_term,generic_manglish,
+download,muat turun,app_term,generic_manglish,
+downloads,muat turun,app_term,generic_manglish,
+downloaded,dimuat turun,,,
+downloading,memuat turun,app_term,generic_manglish,
+lagging,tersekat-sekat,network_performance,telco_specific,
+great,bagus,malay_standard,telco_specific,"real Malay word, kept in Malay"
+like,macam,malay_short_form,generic_manglish,'like' - idioms are now macam + the word
+crazy,gila,slang_intensifier,generic_manglish,
+snail,siput,literal_slang,generic_manglish,
+turtle,kura-kura,literal_slang,generic_manglish,
+pig,babi,literal_slang,generic_manglish,
+trash,sampah,literal_slang,generic_manglish,
+dog,anjing,literal_slang,generic_manglish,
+devil,setan,literal_slang,generic_manglish,
+stupid,bodoh,literal_slang,generic_manglish,
+disappointing,mengecewakan,literal_slang,generic_manglish,
+forbidden,haram,literal_slang,generic_manglish,CHECK: literal meaning weak here
+very,sangat,malay_short_form,generic_manglish,"standard word, translated here"
+terrible,teruk,malay_short_form,generic_manglish,"standard word, translated here"
+because,sebab,malay_short_form,generic_manglish,"standard word, translated here"
+with,dengan,malay_short_form,generic_manglish,"standard word, translated here"
+but,tapi,malay_short_form,generic_manglish,"standard word, translated here"
+for,untuk,malay_short_form,generic_manglish,"standard word, translated here"
+if,kalau,malay_short_form,generic_manglish,"standard word, translated here"
+until,sampai,malay_short_form,generic_manglish,"standard word, translated here"
+a lot,banyak,malay_short_form,generic_manglish,"standard word, translated here"
+can,boleh,malay_short_form,generic_manglish,"standard word, translated here"
+a little,sikit,malay_short_form,generic_manglish,"standard word, translated here"
+correct,betul,malay_short_form,generic_manglish,"standard word, translated here"
+expensive,mahal,malay_short_form,generic_manglish,"standard word, translated here"
+good,bagus,malay_short_form,generic_manglish,"standard word, translated here"
+again,lagi,malay_short_form,generic_manglish,"standard word, translated here"
+also,juga,malay_short_form,generic_manglish,"standard word, translated here"
+slow,perlahan,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+very,sangat,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+good,bagus,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+nice,bagus,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+excellent,bagus,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+awesome,bagus,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+useful,berguna,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+bad,teruk,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+subscribe,melanggan,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+because,kerana,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+please,tolong,english_to_malay,generic_manglish,"normal English word, so typo forms also reach Malay"
+only,sahaja,malay_standard,generic_manglish,awak je boleh = only you can
+that,yang,malay_standard,generic_manglish,
+have to,kena,malay_standard,generic_manglish,
+this,ini,malay_standard,generic_manglish,
+that,itu,malay_standard,generic_manglish,
+now,sekarang,malay_standard,generic_manglish,
+indeed,memang,malay_standard,generic_manglish,
+i,saya,malay_standard,generic_manglish,
+i,aku,malay_standard,generic_manglish,
+get,dapat,malay_standard,generic_manglish,
+pay,bayar,malay_standard,generic_manglish,
+people,orang,malay_standard,generic_manglish,
+new,baru,malay_standard,generic_manglish,CHECK: baru = new / just now
+instead,pula,malay_standard,generic_manglish,
+help,tolong,malay_standard,generic_manglish,
+open,buka,malay_standard,generic_manglish,
+more,makin banyak,malay_standard,generic_manglish,
+use,pakai,malay_standard,generic_manglish,
+package,pakej,malay_standard,generic_manglish,
+year,tahun,malay_standard,generic_manglish,
+same,sama,malay_standard,generic_manglish,
+time,masa,malay_standard,generic_manglish,
+after,selepas,malay_standard,generic_manglish,lepas tu = selepas itu = after that
+not,tidak,malay_standard,generic_manglish,
+want,nak,malay_standard,generic_manglish,Malay side keeps nak
+always,selalu,malay_standard,generic_manglish,
+cannot,tidak boleh,malay_phrase,generic_manglish,'not can' would be wrong
+never,tidak pernah,malay_phrase,generic_manglish,
+easy,mudah,english_to_malay,generic_manglish,
+years,tahun,english_standard,generic_manglish,
+service,perkhidmatan,english_standard,generic_manglish,
+optimize,mengoptimumkan,english_standard,generic_manglish,
+disappointed,kecewa,english_standard,generic_manglish,smh
+thank you,terima kasih,english_phrase,generic_manglish,"thx, tq, thanx ... are fixed by the normalizer"
+thanks,terima kasih,english_standard,generic_manglish,
+i am,saya,english_phrase,generic_manglish,im
+kind of,agak,english_phrase,generic_manglish,kinda
+expensive,mahal-mahal,compound_reduplication,generic_manglish,mahal2 is made by the normalizer
+very-very,sangat-sangat,english_standard,generic_manglish,very2 is made by the normalizer
+customer,pelanggan,customer_service,telco_specific,
+already,sudah,malay_standard,generic_manglish,"dah, dh, sdh are fixed by the normalizer"
+why,kenapa,malay_standard,generic_manglish,"apasal, apesal"
+poop,tahi,literal_slang,generic_manglish,"tai, taik"
+they,mereka,malay_standard,generic_manglish,dorang
+you,kamu,malay_standard,generic_manglish,korang
+pretty,cantik,malay_standard,generic_manglish,cun
+not,bukan,malay_standard,generic_manglish,bukan = is not / not (a noun or a thing)
+not yet,belum,malay_standard,generic_manglish,

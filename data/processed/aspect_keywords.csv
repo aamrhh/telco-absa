@@ -1,0 +1,151 @@
+# Starter keyword lists for Aspect Category Detection (ACD). EDIT FREELY.
+# One keyword or phrase per row, lowercase. Matching is whole-word, on the dictionary-mapped English text.
+# Aim: keywords that clearly belong to ONE aspect. Avoid words that fit several aspects
+# (for example plain "app", "slow", "data", "problem") - they make reviews look multi-aspect.
+# Run preprocessing/detect_aspects.py, look at "hits per keyword", and delete noisy ones.
+aspect,keyword
+service_reliability,network
+service_reliability,signal
+service_reliability,coverage
+service_reliability,reception
+service_reliability,connection
+service_reliability,connectivity
+service_reliability,line
+service_reliability,lines
+service_reliability,speed
+service_reliability,4g
+service_reliability,5g
+service_reliability,lte
+service_reliability,volte
+service_reliability,disconnect
+service_reliability,disconnected
+service_reliability,disconnection
+service_reliability,interruption
+service_reliability,outage
+service_reliability,downtime
+service_reliability,no service
+service_reliability,dropped
+service_reliability,call drop
+service_reliability,call quality
+service_reliability,buffering
+service_reliability,latency
+service_reliability,lag
+service_reliability,lagging
+service_reliability,tower
+service_reliability,rural
+service_reliability,bars
+service_reliability,rangkaian
+service_reliability,talian
+service_reliability,isyarat
+service_reliability,liputan
+service_reliability,sambungan
+service_reliability,internet connection
+service_reliability,internet speed
+service_reliability,slow internet
+service_reliability,no internet
+service_reliability,internet slow
+service_reliability,internet problem
+service_reliability,internet down
+service_reliability,no signal
+service_reliability,weak signal
+service_reliability,signal strength
+service_reliability,network issue
+service_reliability,network problem
+service_reliability,slow connection
+service_reliability,data speed
+customer_service,customer service
+customer_service,customer care
+customer_service,customer support
+customer_service,helpdesk
+customer_service,help desk
+customer_service,hotline
+customer_service,call center
+customer_service,call centre
+customer_service,service center
+customer_service,service centre
+customer_service,agent
+customer_service,agents
+customer_service,staff
+customer_service,representative
+customer_service,advisor
+customer_service,live chat
+customer_service,chatbot
+customer_service,counter
+customer_service,outlet
+customer_service,branch
+customer_service,ticket
+customer_service,no response
+customer_service,khidmat pelanggan
+customer_service,perkhidmatan pelanggan
+customer_service,bantuan
+customer_service,aduan
+app_performance,log in
+app_performance,logged in
+app_performance,sign in
+app_performance,otp
+app_performance,tac
+app_performance,crash
+app_performance,crashes
+app_performance,crashing
+app_performance,bug
+app_performance,bugs
+app_performance,glitch
+app_performance,glitches
+app_performance,error
+app_performance,errors
+app_performance,freeze
+app_performance,freezes
+app_performance,hang
+app_performance,hangs
+app_performance,stuck
+app_performance,loading
+app_performance,update
+app_performance,updates
+app_performance,updated
+app_performance,install
+app_performance,reinstall
+app_performance,uninstall
+app_performance,interface
+app_performance,ui
+app_performance,ux
+app_performance,user friendly
+app_performance,notification
+app_performance,notifications
+app_performance,log out
+app_performance,logout
+app_performance,logged out
+app_performance,logs out
+app_performance,updating
+app_performance,user interface
+customer_service,store
+customer_service,complaint
+customer_service,complaints
+customer_service,complain
+customer_service,complained
+customer_service,dial 118
+customer_service,call 118
+app_performance,cannot open
+app_performance,can not open
+app_performance,not open
+app_performance,unable to open
+app_performance,app slow
+app_performance,apps slow
+app_performance,slow app
+app_performance,slow apps
+app_performance,app too slow
+app_performance,takes forever
+app_performance,blank
+app_performance,white screen
+app_performance,white page
+app_performance,maintenance
+app_performance,latest version
+app_performance,old app
+app_performance,confusing
+app_performance,load
+service_reliability,slow data
+service_reliability,data slow
+service_reliability,unstable
+service_reliability,weak
+service_reliability,full bar
+app_performance,new version
+app_performance,old version

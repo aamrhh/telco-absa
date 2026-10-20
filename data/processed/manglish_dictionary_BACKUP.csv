@@ -1,0 +1,359 @@
+# =====================================================================
+# Manglish Dictionary - full word mapping (Tan et al., 2025 approach)
+# Columns: manglish_term,standard_english,standard_malay,category,type
+#   type = "telco_specific"  -> domain terms (Section 3.5.2, dictionary step)
+#   type = "generic_manglish" -> general Manglish words also resolved here
+#          (previously handled only as normalizer lookup rules; consolidated
+#          into this single dictionary file per Amirah's request so ALL
+#          confirmed Manglish words live in one place)
+# Rows are grouped by type, then by category, with a comment line per group.
+# =====================================================================
+
+# --- TELCO-SPECIFIC TERMS (domain dictionary, Section 3.5.2) ---
+# category: network_performance
+manglish_term,standard_english,standard_malay,category,type
+laggy,lagging,tersekat-sekat,network_performance,telco_specific
+lagg,lag,lambat,network_performance,telco_specific
+lags,lags,tersekat-sekat,network_performance,telco_specific
+lagi2,lagging again,tersekat-sekat lagi,network_performance,telco_specific
+laging,lagging,tersekat-sekat,network_performance,telco_specific
+laggg,lagging,tersekat-sekat,network_performance,telco_specific
+lagii,lag,lambat,network_performance,telco_specific
+lagy,lag,lambat,network_performance,telco_specific
+lagggg,lagging,tersekat-sekat,network_performance,telco_specific
+lagilah,lagging,tersekat-sekat,network_performance,telco_specific
+lag2,lag,lambat,network_performance,telco_specific
+ngelag,lagging,tersekat-sekat,network_performance,telco_specific
+selow,slow,perlahan,network_performance,telco_specific
+# category: billing
+topup,top up,tambah nilai,billing,telco_specific
+topups,top ups,tambah nilai,billing,telco_specific
+sostopup,urgent top up,tambah nilai segera,billing,telco_specific
+fup,fair usage policy,dasar penggunaan wajar,billing,telco_specific
+# category: identity_verification
+ekyc,e-KYC identity verification,pengesahan identiti e-KYC,identity_verification,telco_specific
+kyc,identity verification,pengesahan identiti,identity_verification,telco_specific
+# category: network_technology
+volte,voice over LTE,panggilan suara LTE,network_technology,telco_specific
+# category: customer_service
+cs,customer service,perkhidmatan pelanggan,customer_service,telco_specific
+cust,customer,pelanggan,customer_service,telco_specific
+custumer,customer,pelanggan,customer_service,telco_specific
+# category: device_sim
+simcard,SIM card,kad SIM,device_sim,telco_specific
+simcards,SIM cards,kad SIM,device_sim,telco_specific
+esim,eSIM,SIM elektronik,device_sim,telco_specific
+sim,SIM,SIM,device_sim,telco_specific
+# category: general_quality
+mantapp,great,mantap,general_quality,telco_specific
+# category: account_access
+relogin,log back in,log masuk semula,account_access,telco_specific
+terlogout,logged out unexpectedly,tertiba log keluar,account_access,telco_specific
+loging,logged in,log masuk,account_access,telco_specific
+
+# category: brand_name
+# Correct AND protect telco brand/product names - includes common misspelled
+# variants found in the review data, mapped to the correct brand spelling.
+# Kept identical in English/Malay (brand names aren't translated).
+# NOTE: Celcom and Digi merged into one company (CelcomDigi), but reviewers
+# often mention "Celcom" or "Digi" specifically to refer to the standalone
+# pre-merger brand (e.g. comparing "Celcom used to be better than CelcomDigi
+# now") - so standalone mentions are kept as their own separate names, NOT
+# force-mapped to "CelcomDigi". Only genuinely combined/misspelled forms
+# (celcomdigi, celcomedigi, digicelcom) map to "CelcomDigi".
+celcom,Celcom,Celcom,brand_name,telco_specific
+celcome,Celcom,Celcom,brand_name,telco_specific
+digi,Digi,Digi,brand_name,telco_specific
+celcomdigi,CelcomDigi,CelcomDigi,brand_name,telco_specific
+celcomedigi,CelcomDigi,CelcomDigi,brand_name,telco_specific
+digicelcom,CelcomDigi,CelcomDigi,brand_name,telco_specific
+maxis,Maxis,Maxis,brand_name,telco_specific
+mymaxis,Maxis,Maxis,brand_name,telco_specific
+maxisone,Maxis One,Maxis One,brand_name,telco_specific
+umobile,U Mobile,U Mobile,brand_name,telco_specific
+umobilee,U Mobile,U Mobile,brand_name,telco_specific
+umobileee,U Mobile,U Mobile,brand_name,telco_specific
+youmobile,U Mobile,U Mobile,brand_name,telco_specific
+myumobile,U Mobile,U Mobile,brand_name,telco_specific
+mydigi,Digi,Digi,brand_name,telco_specific
+mycelcom,Celcom,Celcom,brand_name,telco_specific
+hotlink,Hotlink,Hotlink,brand_name,telco_specific
+celcomlife,CelcomLife,CelcomLife,brand_name,telco_specific
+unifi,unifi,unifi,brand_name,telco_specific
+whatsapp,WhatsApp,WhatsApp,brand_name,telco_specific
+whatapps,WhatsApp,WhatsApp,brand_name,telco_specific
+whatapp,WhatsApp,WhatsApp,brand_name,telco_specific
+whtsapp,WhatsApp,WhatsApp,brand_name,telco_specific
+mydigitalid,MyDigital ID,MyDigital ID,brand_name,telco_specific
+mydigiapp,Digi app,aplikasi Digi,brand_name,telco_specific
+digiapp,Digi app,aplikasi Digi,brand_name,telco_specific
+homefibre,Home Fibre,Fiber Rumah,brand_name,telco_specific
+ultra5g,Ultra 5G,Ultra 5G,brand_name,telco_specific
+yes4g,YES 4G,YES 4G,brand_name,telco_specific
+app,app,aplikasi,brand_name,telco_specific
+apps,apps,aplikasi,brand_name,telco_specific
+# category: tech_term
+# Real telco/tech words the English spellchecker does not know and would
+# wrongly "correct" (otp -> top, wifi -> wife, lte -> let, mbps -> maps ...).
+# Listing them here protects them from the normalizer.
+otp,OTP,OTP,tech_term,telco_specific
+otps,OTPs,OTP,tech_term,telco_specific
+wifi,WiFi,WiFi,tech_term,telco_specific
+lte,LTE,LTE,tech_term,telco_specific
+mbps,Mbps,Mbps,tech_term,telco_specific
+fibre,fibre,fibre,tech_term,telco_specific
+centre,centre,pusat,tech_term,telco_specific
+login,log in,log masuk,tech_term,telco_specific
+logins,log ins,log masuk,tech_term,telco_specific
+logout,log out,log keluar,tech_term,telco_specific
+logouts,log outs,log keluar,tech_term,telco_specific
+tiktok,TikTok,TikTok,tech_term,telco_specific
+spotify,Spotify,Spotify,tech_term,telco_specific
+
+# --- GENERIC MANGLISH TERMS (not telco-specific) ---
+# category: english_abbreviation
+pls,please,please,english_abbreviation,generic_manglish
+tq,thank you,terima kasih,english_abbreviation,generic_manglish
+lol,laughing out loud,ketawa besar,english_abbreviation,generic_manglish
+ez,easy,mudah,english_abbreviation,generic_manglish
+gd,good,bagus,english_abbreviation,generic_manglish
+im,i am,saya,english_abbreviation,generic_manglish
+kinda,kind of,agak,english_abbreviation,generic_manglish
+bro,brother,abang,english_abbreviation,generic_manglish
+# category: malay_short_form
+je,just,sahaja,malay_short_form,generic_manglish
+mcm,like,macam,malay_short_form,generic_manglish
+nk,want,nak,malay_short_form,generic_manglish
+tak,not,tidak,malay_short_form,generic_manglish
+dh,already,sudah,malay_short_form,generic_manglish
+sgt,very,sangat,malay_short_form,generic_manglish
+yg,that,yang,malay_short_form,generic_manglish
+tp,but,tapi,malay_short_form,generic_manglish
+kne,have to,kena,malay_short_form,generic_manglish
+lg,again,lagi,malay_short_form,generic_manglish
+ja,only,saja,malay_short_form,generic_manglish
+nie,this,ini,malay_short_form,generic_manglish
+dulu,before,dahulu,malay_short_form,generic_manglish
+skrg,now,sekarang,malay_short_form,generic_manglish
+mmg,indeed,memang,malay_short_form,generic_manglish
+sy,i,saya,malay_short_form,generic_manglish
+aq,i,aku,malay_short_form,generic_manglish
+byk,a lot,banyak,malay_short_form,generic_manglish
+dpt,get,dapat,malay_short_form,generic_manglish
+dgn,with,dengan,malay_short_form,generic_manglish
+byr,pay,bayar,malay_short_form,generic_manglish
+org,people,orang,malay_short_form,generic_manglish
+sbb,because,sebab,malay_short_form,generic_manglish
+pastu,after that,selepas itu,malay_short_form,generic_manglish
+punye,'s (possessive),punya,malay_short_form,generic_manglish
+bru,new,baru,malay_short_form,generic_manglish
+pulak,instead,pula,malay_short_form,generic_manglish
+tlg,help,tolong,malay_short_form,generic_manglish
+xleh,cannot,tak boleh,malay_short_form,generic_manglish
+bukak,open,buka,malay_short_form,generic_manglish
+mkin,increasingly,makin,malay_short_form,generic_manglish
+pkai,use,pakai,malay_short_form,generic_manglish
+pkej,package,pakej,malay_short_form,generic_manglish
+leh,can,boleh,malay_short_form,generic_manglish
+# category: compound_reduplication
+mahal2,expensive expensive,mahal-mahal,compound_reduplication,generic_manglish
+very2,very very,sangat-sangat,compound_reduplication,generic_manglish
+# category: interjection
+laa,lah,lah,interjection,generic_manglish
+huhu,sob,sedih,interjection,generic_manglish
+hmm,hmm,hmm,interjection,generic_manglish
+# category: typo_elongation
+sloww,slow,perlahan,typo_elongation,generic_manglish
+verry,very,sangat,typo_elongation,generic_manglish
+soo,so,jadi,typo_elongation,generic_manglish
+goood,good,bagus,typo_elongation,generic_manglish
+niceee,nice,bagus,typo_elongation,generic_manglish
+excelent,excellent,cemerlang,typo_elongation,generic_manglish
+awsome,awesome,hebat,typo_elongation,generic_manglish
+usefull,useful,berguna,typo_elongation,generic_manglish
+badd,bad,teruk,typo_elongation,generic_manglish
+intenet,internet,internet,typo_elongation,generic_manglish
+verygood,very good,sangat bagus,typo_elongation,generic_manglish
+servis,service,perkhidmatan,typo_elongation,generic_manglish
+# category: slang_intensifier
+giler,extremely,gila,slang_intensifier,generic_manglish
+truk,terrible,teruk,slang_intensifier,generic_manglish
+slalu,always,selalu,slang_intensifier,generic_manglish
+sokmo,always,selalu,slang_intensifier,generic_manglish
+cun,pretty,cantik,slang_intensifier,generic_manglish
+# category: profanity (masked, not translated)
+mampos,[MASKED],[MASKED],profanity,generic_manglish
+buto,[MASKED],[MASKED],profanity,generic_manglish
+lancau,[MASKED],[MASKED],profanity,generic_manglish
+cibai,[MASKED],[MASKED],profanity,generic_manglish
+kontol,[MASKED],[MASKED],profanity,generic_manglish
+# category: idiom_phrase
+# Multi-word Malaysian slang expressions - word-by-word translation would
+# miss or literally mistranslate these, so they're matched as whole phrases
+# (see dictionary_mapper.py phrase-matching) and resolved directly, same as
+# single-word dictionary entries - never reaches a generic translation step.
+# idioms meaning "very slow"
+macam siput,very slow,lembab,idiom_phrase,generic_manglish
+cam siput,very slow,lembab,idiom_phrase,generic_manglish
+macam kura,very slow,lembab,idiom_phrase,generic_manglish
+cam kura,very slow,lembab,idiom_phrase,generic_manglish
+macam kura2,very slow,lembab,idiom_phrase,generic_manglish
+cam kura2,very slow,lembab,idiom_phrase,generic_manglish
+macam 3g,very slow,lembab,idiom_phrase,generic_manglish
+cam 3g,very slow,lembab,idiom_phrase,generic_manglish
+# idioms meaning "very bad"
+macam babi,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam babi,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam sampah,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam sampah,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam anjing,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam anjing,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam setan,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam setan,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam haram,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam haram,very bad,teruk sangat,idiom_phrase,generic_manglish
+# other meanings
+macam bodoh,stupid,bodoh,idiom_phrase,generic_manglish
+cam bodoh,stupid,bodoh,idiom_phrase,generic_manglish
+macam bodo,stupid,bodoh,idiom_phrase,generic_manglish
+cam bodo,stupid,bodoh,idiom_phrase,generic_manglish
+macam hampeh,disappointing,mengecewakan,idiom_phrase,generic_manglish
+cam hampeh,disappointing,mengecewakan,idiom_phrase,generic_manglish
+macam hanat,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam hanat,very bad,teruk sangat,idiom_phrase,generic_manglish
+# vulgar comparison idioms - mapped to their meaning (very bad / stupid); the plain vulgar words above stay [MASKED]
+macam sial,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam sial,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam celaka,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam celaka,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam taik,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam taik,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam barua,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam barua,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam bangang,stupid,bodoh,idiom_phrase,generic_manglish
+cam bangang,stupid,bodoh,idiom_phrase,generic_manglish
+macam bingai,stupid,bodoh,idiom_phrase,generic_manglish
+cam bingai,stupid,bodoh,idiom_phrase,generic_manglish
+macam cibai,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam cibai,very bad,teruk sangat,idiom_phrase,generic_manglish
+macam lancau,very bad,teruk sangat,idiom_phrase,generic_manglish
+cam lancau,very bad,teruk sangat,idiom_phrase,generic_manglish
+# ---------------------------------------------------------------------
+# Added 2026-10-12 after audit of normalizer changes (protect real words
+# and fix frequent typos that the English spellchecker got wrong)
+# ---------------------------------------------------------------------
+faq,FAQ,FAQ,tech_term,generic_manglish
+gprs,GPRS,GPRS,tech_term,telco_specific
+nric,NRIC,NRIC,tech_term,generic_manglish
+xiaomi,Xiaomi,Xiaomi,brand_name,generic_manglish
+huawei,Huawei,Huawei,brand_name,generic_manglish
+waze,Waze,Waze,brand_name,generic_manglish
+tng,Touch 'n Go,Touch 'n Go,brand_name,telco_specific
+umoblie,U Mobile,U Mobile,brand_name,telco_specific
+cheras,Cheras,Cheras,place_name,generic_manglish
+thn,year,tahun,malay_short_form,generic_manglish
+yrs,years,tahun,english_abbreviation,generic_manglish
+sma,same,sama,malay_short_form,generic_manglish
+mmng,indeed,memang,malay_short_form,generic_manglish
+apesal,why,kenapa,malay_short_form,generic_manglish
+mase,time,masa,malay_short_form,generic_manglish
+camtu,like that,macam tu,malay_short_form,generic_manglish
+xbleh,cannot,tak boleh,malay_short_form,generic_manglish
+lpstu,after that,lepas tu,malay_short_form,generic_manglish
+tuh,that,tu,malay_short_form,generic_manglish
+dorang,they,mereka,malay_short_form,generic_manglish
+korang,you,kamu,malay_short_form,generic_manglish
+vro,bro,bro,english_abbreviation,generic_manglish
+subcribe,subscribe,melanggan,typo_elongation,generic_manglish
+unistall,uninstall,nyahpasang,typo_elongation,generic_manglish
+bcause,because,kerana,typo_elongation,generic_manglish
+enternet,internet,internet,typo_elongation,generic_manglish
+upadate,update,kemas kini,typo_elongation,generic_manglish
+pleasee,please,tolong,typo_elongation,generic_manglish
+thiss,this,ini,typo_elongation,generic_manglish
+damm,damn,damn,typo_elongation,generic_manglish
+optimise,optimize,mengoptimumkan,typo_elongation,generic_manglish
+rm-rm,RM2,RM2,number_unit,generic_manglish
+hurm,hmm,hmm,interjection,generic_manglish
+hurmm,hmm,hmm,interjection,generic_manglish
+hurmmm,hmm,hmm,interjection,generic_manglish
+hurmmmm,hmm,hmm,interjection,generic_manglish
+# ---- added 2026-10-12 from audit of 1-2 star reviews ----
+mcm siput,very slow,lembab,idiom_phrase,generic_manglish
+mcm kura,very slow,lembab,idiom_phrase,generic_manglish
+mcm kura2,very slow,lembab,idiom_phrase,generic_manglish
+mcm 3g,very slow,lembab,idiom_phrase,generic_manglish
+mcm babi,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm sampah,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm anjing,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm setan,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm haram,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm bodoh,stupid,bodoh,idiom_phrase,generic_manglish
+mcm bodo,stupid,bodoh,idiom_phrase,generic_manglish
+mcm hampeh,disappointing,mengecewakan,idiom_phrase,generic_manglish
+mcm hanat,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm sial,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm celaka,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm taik,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm barua,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm bangang,stupid,bodoh,idiom_phrase,generic_manglish
+mcm bingai,stupid,bodoh,idiom_phrase,generic_manglish
+mcm cibai,very bad,teruk sangat,idiom_phrase,generic_manglish
+mcm lancau,very bad,teruk sangat,idiom_phrase,generic_manglish
+# standalone slang seen in 1-2 star reviews (so "babi" is not translated as "pig")
+babi,very bad,teruk sangat,slang_intensifier,generic_manglish
+siput,very slow,lembab,slang_intensifier,generic_manglish
+lembab,slow,lembab,slang_intensifier,generic_manglish
+lembap,slow,lembab,typo_elongation,generic_manglish
+terok,terrible,teruk,typo_elongation,generic_manglish
+gampang,stupid,bodoh,slang_intensifier,generic_manglish
+# negation fragments (the cleaning step removed the apostrophe, e.g. "doesn't" -> "doesn")
+don,do not,tidak,english_abbreviation,generic_manglish
+dont,do not,tidak,english_abbreviation,generic_manglish
+doesn,does not,tidak,english_abbreviation,generic_manglish
+doesnt,does not,tidak,english_abbreviation,generic_manglish
+didn,did not,tidak,english_abbreviation,generic_manglish
+didnt,did not,tidak,english_abbreviation,generic_manglish
+isn,is not,bukan,english_abbreviation,generic_manglish
+wasn,was not,bukan,english_abbreviation,generic_manglish
+aren,are not,bukan,english_abbreviation,generic_manglish
+couldn,could not,tidak boleh,english_abbreviation,generic_manglish
+cant,cannot,tidak boleh,english_abbreviation,generic_manglish
+wont,will not,tidak akan,english_abbreviation,generic_manglish
+wouldn,would not,tidak akan,english_abbreviation,generic_manglish
+shouldn,should not,tidak patut,english_abbreviation,generic_manglish
+haven,have not,belum,english_abbreviation,generic_manglish
+hasn,has not,belum,english_abbreviation,generic_manglish
+don t,do not,tidak,english_abbreviation,generic_manglish
+doesn t,does not,tidak,english_abbreviation,generic_manglish
+didn t,did not,tidak,english_abbreviation,generic_manglish
+isn t,is not,bukan,english_abbreviation,generic_manglish
+wasn t,was not,bukan,english_abbreviation,generic_manglish
+aren t,are not,bukan,english_abbreviation,generic_manglish
+weren t,were not,bukan,english_abbreviation,generic_manglish
+couldn t,could not,tidak boleh,english_abbreviation,generic_manglish
+can t,cannot,tidak boleh,english_abbreviation,generic_manglish
+won t,will not,tidak akan,english_abbreviation,generic_manglish
+wouldn t,would not,tidak akan,english_abbreviation,generic_manglish
+shouldn t,should not,tidak patut,english_abbreviation,generic_manglish
+haven t,have not,belum,english_abbreviation,generic_manglish
+hasn t,has not,belum,english_abbreviation,generic_manglish
+hadn t,had not,belum,english_abbreviation,generic_manglish
+tac,TAC,TAC,tech_term,telco_specific
+paywall,paywall,paywall,tech_term,generic_manglish
+line,line,talian,network_performance,telco_specific
+cam,like,macam,malay_short_form,generic_manglish
+xpenah,never,tidak pernah,malay_short_form,generic_manglish
+xpernah,never,tidak pernah,malay_short_form,generic_manglish
+benggong,stupid,bodoh,malay_short_form,generic_manglish
+bengong,stupid,bodoh,malay_short_form,generic_manglish
+ngn,with,dengan,malay_short_form,generic_manglish
+pantat,[MASKED],[MASKED],profanity,generic_manglish
+# category: app_term (added 2026-10-18: normal app words, so the Malay version reads as Malay)
+smh,disappointed,kecewa,english_abbreviation,generic_manglish
+update,update,kemas kini,app_term,generic_manglish
+updates,updates,kemas kini,app_term,generic_manglish
+updating,updating,mengemas kini,app_term,generic_manglish
+download,download,muat turun,app_term,generic_manglish
+downloads,downloads,muat turun,app_term,generic_manglish
+downloading,downloading,memuat turun,app_term,generic_manglish
